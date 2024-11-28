@@ -1,0 +1,845 @@
+@charset "utf-8";
+@media screen and (max-width: 1576px) {
+    .main_visual {
+        width: 100%;
+        height: calc(100vh - 160px);
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+;
+
+/* 1. 첫번째 스크롤 생긴 시점 */
+@media screen and (max-width:1450px) {
+
+    /*  height 모두 auto로 바꾸기 */
+    section.experience {
+        height: auto;
+    }
+
+    section.introduction {
+        height: auto;
+    }
+
+    section.schedule {
+        height: auto;
+    }
+
+    section.notice {
+        height: auto;
+    }
+
+    section.community {
+        height: auto;
+    }
+
+    section.notice {
+        height: auto;
+    }
+
+    /* 컨테이너 사이즈 모두 바꾸기 */
+    header .container {
+        width: 90%;
+    }
+
+    section.experience .container {
+        width: 90%;
+    }
+
+    section.introduction .container {
+        width: 100%;
+    }
+
+    section.schedule .container {
+        width: 90%;
+    }
+
+    section.notice .container {
+        width: 90%;
+    }
+
+    section.community .container {
+        width: 90%;
+    }
+
+    footer .container {
+        width: 90%;
+    }
+
+    /* 인물들의 height를 맞춤 */
+    section.introduction section.articles article {
+        height: 100%;
+    }
+
+    /* 스케줄 글씨 넘쳐서 location schedule 글씨 줄임 */
+    section.schedule .container .bottom section.articles article .txt .btm h4 {
+        font-size: 18px;
+    }
+
+    section.notice ul.updates li a p {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    section.community ul.bottom li {
+        width: 30%;
+    }
+
+    section.community ul.bottom li img {
+        width: 100%;
+    }
+}
+
+/* 2. 컨테이너 사이즈 깨주기 */
+@media screen and (max-width:1360px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+/* 3. 두번째 스크롤 생긴 시점 */
+@media screen and (max-width:1330px) {
+    .container {
+        width: 100%;
+        max-width: 1064px;
+    }
+
+    /* 섹션 1 experience */
+
+    section.experience .container article h3 {
+        font-size: 30px;
+    }
+
+    /* 섹션2 introduction */
+    section.introduction {
+        width: 100%;
+        height: auto;
+    }
+
+    .article_slide_all .swiper-button-prev {
+        width: 60px;
+        height: 60px;
+        left: 10px;
+    }
+
+    .article_slide_all .swiper-button-next {
+        width: 60px;
+        height: 60px;
+        right: 10px;
+    }
+
+    /* 슬로건 */
+    .slogan {
+        margin-top: 0;
+    }
+
+    /* 섹션3 notice */
+    section.notice ul.updates li a p {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* 섹션4 schedule */
+    section.schedule {
+        height: auto;
+    }
+
+    section.schedule .container .bottom section.articles {
+        width: 800px;
+    }
+
+    /* 섹션 5 community */
+    section.community ul.bottom li {
+        width: 30%;
+    }
+
+    section.community ul.bottom li img {
+        width: 100%;
+    }
+}
+
+/* 4. 세번째 스크롤 생긴 시점 */
+@media screen and (max-width:1100px) {
+    .container {
+        max-width: 880px;
+    }
+
+    header .container .logo {
+        width: 150px;
+        height: 40px;
+    }
+
+    header .container img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main_visual {
+        height: calc(100vh - 160px);
+    }
+
+    header {
+        height: 160px;
+    }
+
+    header .container nav {
+        width: 80%;
+    }
+
+    section.community ul.bottom {
+        height: 430px;
+    }
+
+    section.community ul.bottom li {
+        height: 100%;
+    }
+
+    section.community ul.bottom li p {
+        font-size: 24px;
+    }
+    /* 푸터 */
+    footer {
+        width: 100%;
+        height: 432px;
+        background: #000;
+        color: #fff;
+        font-family: "Noto Sans", sans-serif;
+    }
+
+    footer .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    footer .container ul.left {
+        width: 253px;
+        height: 306px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    footer .container ul.left h4 {
+        font-size: 26px;
+        font-family: "Crimson Text", serif;
+    }
+
+    footer .container ul.left p {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 300;
+    }
+
+    footer .container ul.left ul.snssub {
+        width: 138px;
+        height: 24px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .container ul.middle {
+        width: 226px;
+        height: 298px;
+        font-size: 20px;
+        font-weight: 300;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    footer .container ul.right {
+        width: 224px;
+        height: 298px;
+        font-size: 20px;
+        font-weight: 300;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
+/* 5. 네번째 스크롤 생긴 시점 */
+@media screen and (max-width:1018px) {
+    header .container nav {
+        font-size: 16px;
+    }
+}
+
+
+/* 6. 태블릿 */
+@media screen and (max-width:834px) {
+
+    .container {
+        max-width: 663px;
+        margin: 0 auto;
+    }
+
+    /* 모바일버전에서는 여백 많아보여서 줄임 */
+    section.introduction {
+        padding-top: 0;
+    }
+
+    section.community {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    section.notice {
+        padding-top: 0;
+    }
+
+
+
+    .title h2 {
+        font-size: 64px;
+    }
+
+    .title p {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    /* 헤더 */
+    header .container {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+
+    header .container nav {
+        width: 100%;
+        height: 22px;
+        flex-direction: row;
+        justify-content: space-between;
+        /* align-items: center; */
+    }
+
+    header .container nav .ham {
+        display: block;
+    }
+
+    header .container nav ul.menu li.txt {
+        display: none;
+    }
+
+    header .container nav ul.menu li.icon_none {
+        display: block;
+    }
+
+    header .container nav ul.menu {
+        width: 25%;
+        height: 22px;
+    }
+
+    header .container nav ul.gnb {
+        display: none;
+    }
+
+    header .container nav ul.menu li.icon {
+        width: 33%;
+    }
+
+    header .container nav ul.menu li.icon_none {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 화면 태블릿보다 작을 때 아이콘 2개 호버 밑줄 상황*/
+    header .container nav ul.menu li.search::after {
+        content: 'Search';
+        display: block;
+        font-size: 14px;
+        margin-top: 8px;
+        opacity: 0;
+        transition: .5s;
+    }
+
+    header .container nav ul.menu .user::after {
+        content: 'Profile';
+        display: block;
+        font-size: 14px;
+        margin-top: 8px;
+        opacity: 0;
+        transition: .5s;
+    }
+
+    header .container nav ul.menu li.icon:hover::after {
+        opacity: 1;
+    }
+
+    /* 화면 태블릿보다 작을 때 언어 드롭다운 메뉴*/
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 28px;
+        z-index: 1;
+        font-weight: 400;
+        background-color: #f9f9f9;
+    }
+
+
+    /* 섹션 1 experience */
+
+    section.experience .container .title {
+        width: 100%;
+    }
+
+    section.experience .container section.articles {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    section.experience .container article {
+        width: 45%;
+        height: 600px;
+    }
+
+    section.experience .container article.article3 {
+        width: 100%;
+        margin: 70px auto 0;
+    }
+
+    section.experience .container article.article3 .txt {
+        width: 100%;
+        height: 162px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+    }
+
+    section.experience .container article.article3 .txt p {
+        text-align: center;
+    }
+
+    section.experience .container article h3 {
+        font-size: 30px;
+    }
+
+    /* 섹션2 introduction */
+    section.introduction section.articles article {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* 캘린더 */
+    .calendar {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .ui-datepicker-calendar tbody tr td {
+        width: 10%;
+        /* 각 날짜 */
+    }
+
+    .ui-state-default {
+        width: 100%;
+        /* 각 날짜의 글씨 */
+        font-size: 20px;
+    }
+
+    section.schedule .container {
+        width: 90%;
+    }
+
+    section.schedule .container .bottom {
+        flex-direction: column;
+        align-content: space-between;
+        width: 100%;
+    }
+
+    section.schedule .container .bottom section.articles {
+        margin-left: 0;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    section.schedule .container .bottom section.articles article {
+        width: 200px;
+        height: 530px;
+    }
+
+    /* 모바일-태블릿버전은 글씨 없앰다 */
+    section.schedule .container .bottom section.articles .txt .btm h4 {
+        display: none;
+    }
+
+    section.schedule .container .bottom section.articles .txt .btm p {
+        display: none;
+    }
+
+    /* 섹션5 notice */
+    section.notice ul.updates li a h4 {
+        width: 20%;
+        font-size: 18px;
+    }
+
+    section.notice ul.updates li:nth-child(2n+3) a h4 {
+        font-size: 18px;
+    }
+
+    section.notice ul.updates li a p {
+        line-height: 100px;
+        font-size: 20px;
+        flex: 1 1 200px;
+    }
+
+    section.notice ul.updates li a span {
+        font-size: 18px;
+    }
+
+    section.notice .container .btn {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* 섹션6 커뮤니티 */
+
+    section.community ul.bottom li {
+        height: 300px;
+    }
+
+    section.community ul.bottom li p {
+        font-size: 24px;
+    }
+
+    /* footer */
+    footer {
+        height: auto;
+    }
+
+    footer .container {
+        flex-wrap: wrap;
+    }
+
+
+    footer .container ul.left {
+        width: 100%;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    footer .container ul.left p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    footer .container ul.middle {
+        width: 50%;
+        align-items: center;
+        margin-top: 86px;
+    }
+
+    footer .container ul.right {
+        width: 50%;
+        align-items: center;
+        margin-top: 86px;
+    }
+
+    footer .container>ul.middle>li,
+    footer .container>ul.right>li {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .container .logo {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    footer .container .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:678px) {
+    section.schedule .container .bottom section.articles article .txt .btm h4 {
+        font-size: 16px;
+    }
+
+}
+
+/* 7. 인물 한명 나올 때 이름 크기 줄이기  */
+@media screen and (max-width:640px) {
+    .container {
+        max-width: 512px;
+    }
+
+    .main_visual .tit {
+        font-size: 48px;
+        line-height: 60px;
+        bottom: 10%;
+        right: 5%;
+    }
+
+    section.introduction section.articles h2 {
+        width: 80%;
+    }
+
+    header .container nav ul.menu li.search::after {
+        font-size: 12px;
+    }
+
+    header .container nav ul.menu .user::after {
+        font-size: 12px;
+    }
+
+    section.community ul.bottom {
+        flex-direction: column;
+        transform: translateY(-20px);
+        height: 934px;
+        align-items: center;
+    }
+}
+
+/* 8. 글씨가 넘친 시점(experience article의 글씨) */
+@media screen and (max-width:616px) {
+    section.experience .container article .txt {
+        width: 80%;
+    }
+
+    section.experience .container article .txt p {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    section.notice .container .btn {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* 9. section.notice 버튼들 크기 확 줄어드지 않게 중간 조정하기 */
+@media screen and (max-width:510px) {
+    .container {
+        max-width: 408px;
+    }
+
+    section.notice ul.updates li a h4 {
+        height: 40px;
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    section.notice ul.updates li:nth-child(2n+3) a h4 {
+        height: 40px;
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    section.notice .container .btn {
+        width: 80px;
+        height: 80px;
+    }
+
+    section.notice .container .btn img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* 10. 다섯번째 스크롤 생긴 시점*/
+@media screen and (max-width:455px) {
+    .title h2 {
+        font-size: 60px;
+    }
+
+    .img-box {
+        width: 300px;
+        height: 100%;
+    }
+}
+
+/* 11. 모바일 */
+@media screen and (max-width:430px) {
+
+    :root {
+        --swiper-navigation-size: 22px;
+    }
+
+    .container {
+        max-width: 334px;
+    }
+
+    /* 섹션 타이틀  */
+    .title h2 {
+        font-size: 36px;
+    }
+
+    .title p {
+        font-size: 20px;
+    }
+
+    /* 메인비주얼*/
+
+
+    /* 섹션 1 experience */
+    section.experience .container section.articles {
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: space-around;
+    }
+
+    section.experience .container article {
+        width: 100%;
+        height: 600px;
+    }
+
+    section.experience .container article.article2 {
+        margin: 70px auto 0;
+    }
+
+    section.experience .container article.article3 a {
+        width: 100%;
+        position: relative;
+    }
+
+    section.experience .container article.article3 {
+        position: relative;
+    }
+
+    section.experience .container article.article3 .txt {
+        position: absolute;
+        left: 100px;
+        bottom: 23px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+        left: 23px;
+        transform: translate(0, 110px);
+        align-items: flex-start;
+    }
+
+    section.experience .container article.article3 .txt p {
+        text-align: left;
+    }
+
+    /* 섹션2 introduction */
+    section.introduction {
+        padding-top: 0;
+    }
+
+    .article_slide_all .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+    }
+
+    .article_slide_all .swiper-button-next {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* 캘린더 */
+
+    .ui-datepicker-calendar thead tr th span {
+        font-size: 15px;
+        text-align: center;
+        color: #000;
+        transform: translateX(7px);
+    }
+
+    section.schedule .container .bottom section.articles {
+        margin-top: 80px;
+    }
+
+    /* 섹션5 notice */
+
+    section.notice .title p {
+        margin-bottom: 20px;
+    }
+
+    section.notice .container .top {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section.notice .container .btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    section.notice ul.updates {
+        margin-top: 20px;
+    }
+
+    section.notice ul.updates li {
+        height: 110px;
+        flex-direction: column;
+    }
+
+    section.notice ul.updates li a {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 15px;
+    }
+
+    section.notice ul.updates li a p {
+        font-size: 14px;
+        margin-left: 0;
+        margin-top: 10px;
+        line-height: 20px;
+        width: 100%;
+    }
+
+    section.notice ul.updates li a h4 {
+        width: 70px;
+        height: 30px;
+        font-size: 10px;
+        line-height: 30px;
+    }
+
+    section.notice ul.updates li a span {
+        font-size: 14px;
+        transform: translateX(-40px);
+    }
+
+    section.notice ul.updates li:nth-child(2n+3) a h4 {
+        width: 70px;
+        height: 30px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    section.notice .container .btn img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* 섹션6 커뮤니티 */
+
+
+    section.community ul.bottom li {
+        width: 263px;
+        height: 250px;
+    }
+
+    section.community ul.bottom li p {
+        font-size: 20px;
+    }
+}
+
+/* 12. 여섯번째 스크롤 생긴 시점*/
+@media screen and (max-width:349px) {
+    .main_visual .tit {
+        font-size: 28px;
+        bottom: 16%;
+        right: 10%;
+        margin-right: 0;
+        line-height: 50px;
+    }
+}

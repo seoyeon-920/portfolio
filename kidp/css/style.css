@@ -1,0 +1,1023 @@
+@charset "utf-8";
+
+:root {
+    --main-blue: #0F2A48;
+    --main-blue2: #33336B;
+    --main-blue3: #50B0F9;
+    --main-brown1: #945350;
+    --font-color1: #333333;
+    --bg-color1: #ffffff;
+    --point-color1: #D11A2A;
+}
+
+.wrap {
+    width: 100%;
+    background-color: var(--bg-color1);
+    color: var(var(--font-color1));
+    overflow: hidden;
+    font-family: 'Pretendard-Regular';
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* main */
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+/* header-container */
+header {
+    width: 100%;
+}
+
+header .container {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header .container form {
+    width: 512px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header .container form input {
+    width: 512px;
+    height: 56px;
+    border: 2px solid #D11A2A;
+    border-radius: 50px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+header .container form button {
+    border: none;
+    background: none;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 6%;
+    top: 16%;
+    cursor: pointer;
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+    display: none;
+}
+
+header .container .h_right {
+    width: 320px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+header .container ul.iconset {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container ul.loginjoin {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    color: #aaa;
+}
+
+header .container ul.loginjoin li {
+    width: 50%;
+    text-align: center;
+    font-weight: 500;
+}
+
+ul.loginjoin li:first-child {
+    border-right: 1px solid #aaa;
+}
+
+/* header- ul.gnb */
+
+header nav {
+    width: 100%;
+    background-color: var(--main-brown1);
+}
+
+header nav ul.gnb {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+header nav ul.gnb li {
+    flex: 1;
+    border-right: 1px solid var(--bg-color1);
+
+}
+
+header nav ul.gnb li a {
+    display: block;
+    width: 100%;
+    height: 66px;
+    text-align: center;
+    line-height: 66px;
+    font-size: 24px;
+    color: var(--bg-color1);
+}
+
+
+/* main_visual */
+
+.main_visual {
+    width: 100%;
+    position: relative;
+    height: 70vh;
+}
+
+.main_visual ul.slide li {
+    width: 1190px;
+}
+
+/* 페이지네이션 */
+
+.main_visual .pager {
+    position: absolute;
+    z-index: 10;
+    width: 224px;
+    height: 50px;
+    left: 50%;
+    margin-left: -122px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_visual .pager .left,
+.main_visual .pager .right {
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--main-blue2);
+    font-weight: 600;
+}
+
+.main_visual .pager .swiper-pagination {
+    position: static;
+}
+
+.main_visual .swiper-pagination-bullet {
+    background-color: #aaa;
+    width: 12px;
+    height: 12px;
+}
+
+.main_visual .swiper-pagination-bullet-active {
+    background-color: var(--main-blue2);
+}
+
+/* 왼쪽오른쪽 버튼 */
+.main_visual .prev {
+    position: absolute;
+    top: 45%;
+    left: 12%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.main_visual .next {
+    position: absolute;
+    top: 45%;
+    right: 12%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* go */
+
+section.go {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 100px 0;
+}
+
+section.go .bookmark1 {
+    position: absolute;
+    right: 5%;
+    top: -3%;
+}
+
+section.go .bookmark2 {
+    position: absolute;
+    right: 2%;
+    top: 3%;
+}
+
+section.go h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: 7%;
+}
+
+section.go .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+section.go .container article.menus {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+section.go ul.left {
+    width: 426px;
+    height: 438px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section.go ul.left li {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.go ul.left li::before {
+    display: block;
+    content: '';
+    width: 18px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 20px 0 0 20px;
+}
+
+section.go ul.left li.firstedge::before {
+    background-color: var(--main-brown1);
+}
+
+section.go ul.left li.secondedge::before {
+    background-color: var(--main-blue2);
+}
+
+section.go ul.left li a {
+    width: 210px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section.go ul.left li a p {
+    margin-left: 13px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+section.go ul.left img.edge1 {
+    border-radius: 20px 0 0 20px;
+}
+
+section.go ul.left img.edge2 {
+    border-radius: 20px 0 0 20px;
+}
+
+section.go ul.right {
+    width: 690px;
+    height: 430px;
+    background-color: #50B0F9;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.go ul.right li {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section.go ul.right li.first {
+    background-image: url(../img/go_bg1.png);
+}
+
+section.go ul.right li.second {
+    background-image: url(../img/go_bg2.png);
+}
+
+section.go ul.right li.third {
+    background-image: url(../img/go_bg3.png);
+}
+
+section.go ul.right li.fourth {
+    background-image: url(../img/go_bg4.png);
+}
+
+section.go ul.right li a {
+    width: 90%;
+    height: 60px;
+    margin: 0 auto;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* text-align: center; */
+}
+
+section.go ul.right li a p {
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+section.go ul.right li a img {
+    height: 40px;
+}
+
+/* section.notice */
+
+section.notice {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/notice_bg.png) no-repeat center center/cover;
+}
+
+section.notice h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+section.notice .container {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+section.notice .tab {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section.notice ul.tabmenu {
+    width: 500px;
+    height: 70px;
+    display: flex;
+    /* transform: translate(150px,150px); */
+}
+
+section.notice ul.tabmenu li {
+    width: 34%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 20px;
+    cursor: pointer;
+    background: url(../img/notice_tapoff.png) no-repeat center center;
+}
+section.notice ul.tabmenu li p{
+    transform: translateX(-13px);
+}
+section.notice ul.tabmenu li.on {
+    background: url(../img/notice_tapon.png) no-repeat center center;
+    color: #fff;
+}
+
+section.notice ul.tabcon {
+    width: 100%;
+    height: 358px;
+    border: 1px solid #ddd;
+    position: relative;
+    background-color: #fff;
+}
+
+
+section.notice ul.tabcon>li {
+    width: 100%;
+    height: 100%;
+    /*     border-right: 1px solid #aaa; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+section.notice ul.tabcon>li.on {
+    display: block;
+}
+
+section.notice ul.tabcon>li>ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+section.notice ul.tabcon>li>ul>li {
+    flex: 1;
+    border-right: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+section.notice ul.tabcon>li>ul>li:last-child {
+    border-right: none;
+}
+
+section.notice ul.tabcon>li>ul>li a {
+    width: 100%;
+    height: 80%;
+    display: block;
+    text-align: left;
+}
+
+section.notice ul.tabcon>li>ul>li a .txt_box {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section.notice ul.tabcon>li>ul>li a h3 {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+section.notice ul.tabcon>li>ul>li a p {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+section.notice ul.tabcon>li>ul>li a span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #aaa;
+    transform: translateY(40px);
+}
+
+section.gallery {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: var(--main-blue);
+    display: flex;
+    align-items: center;
+}
+
+section.gallery .bookmark1 {
+    position: absolute;
+    left: 5%;
+    top: -12%;
+}
+
+section.gallery .bookmark2 {
+    position: absolute;
+    left: 2%;
+    top: -7%;
+}
+
+section.gallery .container {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* background: darkgreen; */
+}
+
+section.gallery h2 {
+    text-align: center;
+    color: var(--bg-color1);
+    font-size: 50px;
+}
+
+section.gallery h2 b {
+    font-weight: 600;
+}
+
+section.gallery ul.box {
+    width: 100%;
+    height: 437px;
+    display: flex;
+    justify-content: space-around;
+}
+
+section.gallery ul.box li {
+    width: 400px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+section.gallery ul.box li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+section.gallery ul.box li img {
+    border-radius: 50px 50px 0 0;
+}
+
+section.gallery ul.box li a .txt_box {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+section.gallery ul.box li a h3 {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 500;
+    margin-left: 16px;
+}
+
+section.gallery ul.box li a span {
+    font-size: 16px;
+    color: #aaa;
+    font-weight: 500;
+    margin-left: 16px;
+    transform: translateY(-20px);
+}
+
+section.gallery ul.box li a b {
+    color: var(--font-color1);
+    font-size: 16px;
+    font-weight: 600;
+    width: 160px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 16px;
+    transform: translateY(-13px);
+}
+
+section.gallery ul.box li a b img {
+    height: 18px;
+}
+
+section.gallery ul.snsset {
+    width: 80%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.gallery ul.snsset li {
+    flex: 1;
+    height: 100%;
+
+}
+
+section.gallery ul.snsset li a {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section.gallery ul.snsset li a p {
+    font-size: 16px;
+    color: #fff;
+}
+
+section.gallery ul.snsset li a img {
+    height: 28px;
+}
+
+/* section.knowledge */
+
+section.knowledge {
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0;
+    position: relative;
+}
+
+section.knowledge .container {
+    height: 90%;
+    position: relative;
+}
+
+section.knowledge .title {
+    width: 380px;
+    height: 180px;
+}
+
+section.knowledge .title h2 {
+    font-size: 50px;
+    line-height: 70px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+section.knowledge .title p {
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+section.knowledge ul.k_menu {
+    width: 1045px;
+    height: 220px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    z-index: 10;
+    /* background-color: #50B0F9; */
+}
+
+section.knowledge ul.k_menu li {
+    width: 250px;
+    height: 220px;
+    overflow: hidden;
+}
+
+section.knowledge ul.k_menu li a img {
+    transition: .5s;
+    overflow: hidden;
+}
+
+section.knowledge ul.k_menu li a:hover img {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+section.knowledge .mainbg_image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+section.knowledge .slogan {
+    width: 100%;
+    height: 95px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+section.knowledge .slogan p {
+    text-align: center;
+    font-size: 80px;
+    color: #e2e2e2;
+    font-weight: 700;
+    letter-spacing: -3px;
+}
+
+/* section.support */
+
+section.support {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+section.support .slide {
+    width: 100%;
+    height: 100%;
+}
+
+section.support .swiper-slide>.container {
+    width: 1340px;
+}
+
+section.support .slide li.slide1 {
+    background: url(../img/support_bg1.png) no-repeat center/cover;
+}
+
+section.support .slide li.slide2 {
+    background: url(../img/support_bg2.png) no-repeat center/cover;
+}
+
+section.support .slide li.slide3 {
+    background: url(../img/support_bg3.png) no-repeat center/cover;
+}
+
+section.support .slide li.slide4 {
+    background: url(../img/support_bg4.png) no-repeat center/cover;
+}
+
+section.support .title {
+    width: 100%;
+    height: 170px;
+    color: var(--bg-color1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 200px;
+}
+
+section.support .title h2 {
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+section.support .title p {
+    font-size: 24px;
+    line-height: 40px;
+}
+
+section.support .btn_all {
+    position: absolute;
+    width: 1340px;
+    height: 336px;
+    left: 50%;
+    top: 200px;
+    margin-left: -670px;
+    z-index: 100;
+}
+
+section.support ul.buttons {
+    width: 730px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+section.support ul.buttons li {
+    width: 230px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+
+section.support ul.buttons li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    color: var(--bg-color1);
+    transition: .5s;
+}
+
+section.support ul.buttons li:hover a {
+    background-color: var(--bg-color1);
+    color: #333333;
+}
+
+section.support ul.buttons li span i {
+    transition: .5s;
+}
+
+section.support ul.buttons li:hover span i {
+    color: #333333;
+}
+
+
+section.support ul.side {
+    width: 302px;
+    height: 336px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+section.support ul.side li {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(51, 51, 107, 0.29);
+    border-bottom: 0.5px solid #aaa;
+    color: var(--bg-color1);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+section.support ul.side li:last-child {
+    border: none;
+}
+
+section.support ul.side li.active {
+    background-color: var(--main-blue2);
+}
+
+section.support .pager_all {
+    position: absolute;
+    width: 224px;
+    height: 50px;
+    left: 50%;
+    margin-left: -122px;
+    bottom: 100px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.support .pager_all .left,
+section.support .pager_all .right {
+    cursor: pointer;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 300;
+}
+
+section.support .pager_all .swiper-pagination {
+    position: static;
+}
+
+section.support .swiper-pagination-bullet {
+    color: #000;
+    width: 12px;
+    height: 12px;
+}
+
+section.support .swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 332px;
+}
+
+footer nav {
+    width: 100%;
+    background-color: var(--main-blue);
+}
+
+footer nav ul.famsite {
+    width: 75%;
+    height: 72px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* nav가 두개 있어도 되는지 */
+
+footer nav ul.famsite li {
+    flex: 1;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer nav ul.famsite li a {
+    display: block;
+    width: 80%;
+    height: 80%;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--bg-color1);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer nav ul.famsite li a img {
+    width: 24px;
+    object-fit: contain;
+}
+
+footer .f_mid {
+    width: 100%;
+    height: 87px;
+}
+
+footer .f_mid .container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+footer .f_mid .container ul {
+    width: 50%;
+    height: 30px;
+    display: flex;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+footer .f_mid .container ul li {
+    width: 25%;
+    border-right: 1px solid #000;
+}
+
+footer .f_mid .container ul li:first-child {
+    width: 20%;
+}
+
+footer .f_mid .container ul li:last-child {
+    border: none;
+}
+
+footer .f_mid .container ul li.red {
+    text-decoration: underline;
+    color: var(--point-color1);
+    font-weight: 600;
+}
+
+footer .f_mid .container ul li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+
+footer .f_btm {
+    width: 100%;
+    height: 174px;
+}
+
+footer .f_btm .container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .f_btm .container .txt {
+    font-size: 16px;
+    width: 500px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer .f_btm .container .txt p {
+    font-weight: 300;
+}
+
+footer .f_btm .container .txt p span {
+    border-right: 1px solid #aaa;
+    padding-right: 10px;
+    margin-right: 10px;
+    font-weight: 400;
+}
+
+footer .f_btm .container .txt p strong {
+    color: var(--point-color1);
+    font-weight: 600;
+}
+
+footer .f_btm .container .sites img.db {
+    margin-left: 50px;
+}
